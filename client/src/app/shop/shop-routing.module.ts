@@ -4,10 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { ShopComponent } from './shop.component';
 
-
 const routes: Routes = [
-  { path: '', component: ShopComponent },
-  { path: ':id', component: ProductDetailsComponent },
+  {path: '', component: ShopComponent},
+  {path: ':id', component: ProductDetailsComponent},
 ]
 
 @NgModule({
@@ -15,7 +14,7 @@ const routes: Routes = [
   imports: [
     RouterModule.forChild(routes)
   ],
-  exports :[
+  exports: [
     RouterModule
   ]
 })
