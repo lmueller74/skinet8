@@ -30,10 +30,12 @@
               "src/assets"
             ],
             "styles": [
-              "node_modules/ngx-toastr/toastr.css",
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
+              "node_modules/bootswatch/dist/united/bootstrap.min.css",
               "node_modules/font-awesome/css/font-awesome.min.css",
+              "node_modules/ngx-spinner/animations/timer.css",
+              "node_modules/ngx-toastr/toastr.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -117,6 +119,6 @@
     }
   },
   "cli": {
-    "analytics": "0ca4f02f-61dc-4fae-80b2-9f19079049da"
+    "analytics": "1de31d71-f15f-41cf-a7d7-cfd83e053567"
   }
 }

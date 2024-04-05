@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router, RouterModule } from '@angular/router';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-server-error',
@@ -13,5 +13,4 @@ export class ServerErrorComponent {
     const navigation = this.router.getCurrentNavigation();
     this.error = navigation?.extras?.state?.['error'];
   }
-
 }
