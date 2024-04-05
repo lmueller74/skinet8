@@ -20,12 +20,12 @@ export class ProductDetailsComponent implements OnInit {
   constructor(private shopService: ShopService, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.loadProduct();
   }
   loadProduct() {
     const id = this.activatedRoute.snapshot.paramMap.get('id');
     if (id) this.shopService.getProduct(+id).subscribe({
-      next: r => this.product = r,
+      next: product => this.product = product,
       error: r => console.log(r)
     })
   }
